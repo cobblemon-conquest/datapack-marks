@@ -1,0 +1,46 @@
+name: Create release
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.read_version.outputs.version }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Read version from file
+        id: read_version
+        run: |
+          if [ ! -f "./version" ]; then
+            echo "Version file not found"
+            exit 1
+          fi
+
+          VERSION=$(cat ./version | tr -d '[:space:]')
+
+          if [ -z "$VERSION" ]; then
+            echo "Version file is empty"
+            exit 1
+          fi
+
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+  release:
+    needs: prepare
+    uses: cobblemon-conquest/workflows/.github/workflows/release-datapack-or-resourcepack.yaml@main
+    permissions:
+      contents: write
+    with:
+      file_name: "cobblemon-conquest_marks-datapack"
+      version: ${{ needs.prepare.outputs.version }}
+      folder_path: ./src
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
