@@ -1,5 +1,8 @@
 {
     "cobblemon.mark.mark_founder": "Conquest founder emblem",
     "cobblemon.mark.mark_founder.title": "%1$s Founder of Conquest",
-    "cobblemon.mark.mark_founder.desc": "This mark is exclusive to the Cobblemon Conquest founding event"
+    "cobblemon.mark.mark_founder.desc": "This mark is exclusive to the Cobblemon Conquest founding event",
+    "cobblemon.mark.mark_ghost_champion": "Ghost champion emblem",
+    "cobblemon.mark.mark_ghost_champion.title": "%1$s Ghost Champion",
+    "cobblemon.mark.mark_ghost_champion.desc": "This mark is obtained by winning the I edition of the Conquest ghost tournament"
 }
