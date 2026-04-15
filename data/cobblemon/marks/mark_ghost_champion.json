@@ -1,0 +1,7 @@
+{
+	"name": "cobblemon.mark.mark_ghost_champion",
+	"title": "cobblemon.mark.mark_ghost_champion.title",
+	"titleColor": "D100D1",
+	"description": "cobblemon.mark.mark_ghost_champion.desc",
+	"texture": "cobblemon:textures/gui/mark/mark_ghost_champion.png"
+}
