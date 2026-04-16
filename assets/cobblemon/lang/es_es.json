@@ -4,5 +4,6 @@
     "cobblemon.mark.mark_founder.desc": "Esta marca es exclusiva del evento de fundación de Cobblemon Conquest",
     "cobblemon.mark.mark_ghost_champion": "Emblema de campeón fantasma",
     "cobblemon.mark.mark_ghost_champion.title": "%1$s Campeón fantasma",
-    "cobblemon.mark.mark_ghost_champion.desc": "Esta marca se obtiene al ganar la I edición del torneo fantasma de Conquest"
+    "cobblemon.mark.mark_ghost_champion.desc": "Esta marca se obtiene al ganar la I edición del torneo fantasma de Conquest",
+    "cobblemon.ui.stash.iron": "Alijo de hierro"
 }
